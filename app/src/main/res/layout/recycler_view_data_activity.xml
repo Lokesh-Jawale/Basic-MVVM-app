@@ -4,8 +4,9 @@
     android:id="@+id/recycler_view_data_activity"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#E0F2F1"
+    android:background="#E1F5FE"
     android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
     android:orientation="vertical">
 
     <LinearLayout
@@ -29,7 +30,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:textStyle="bold"
                 android:text="Name :" />
 
@@ -37,13 +38,13 @@
                 android:id="@+id/name_text"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2.5"
+                android:layout_weight="2"
                 android:layout_gravity="center"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="8dp"
                 android:textColor="#00897B"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 tools:text="name" />
 
         </LinearLayout>
@@ -62,7 +63,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:textColor="#00796B"
                 android:textStyle="bold"
                 android:text="Open issues count :" />
@@ -71,13 +72,13 @@
                 android:id="@+id/open_issues_count_text"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2.5"
+                android:layout_weight="2"
                 android:layout_gravity="center"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="2dp"
                 android:textColor="#00897B"
                 android:layout_marginBottom="2dp"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 tools:text="open issues count :" />
 
         </LinearLayout>
@@ -97,7 +98,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginTop="2dp"
             android:layout_marginBottom="2dp"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textColor="#00796B"
             android:text="Description :" />
 
@@ -105,13 +106,13 @@
                 android:id="@+id/description_text"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2.5"
+                android:layout_weight="2"
                 android:layout_gravity="center"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="8dp"
                 android:textColor="#00897B"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 tools:text="description" />
 
         </LinearLayout>
@@ -121,50 +122,30 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
         android:layout_marginBottom="4dp"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:id="@+id/license_text_view"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textColor="#00796B"
-            android:textSize="16sp"
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:text="License :" />
-
-        <TextView
-            android:id="@+id/permissions_text_view"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#00796B"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:text="Permissions :" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:background="#B2DFDB"
-        android:orientation="horizontal" >
+        android:layout_marginTop="16dp"
+        android:background="#B2EBF2"
+        android:orientation="vertical" >
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginEnd="2dp"
             android:layout_marginBottom="2dp"
             android:layout_marginTop="2dp"
             android:layout_marginLeft="2dp"
-            android:background="#E0F2F1"
+            android:background="#E1F5FE"
             android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/license_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#00796B"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                android:textStyle="bold"
+                android:text="License :" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -187,7 +168,7 @@
                     android:id="@+id/license_key_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.8"
+                    android:layout_weight="3"
                     android:textColor="#00897B"
                     android:layout_marginStart="16dp"
                     android:layout_marginBottom="2dp"
@@ -217,7 +198,7 @@
                     android:id="@+id/license_name_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.8"
+                    android:layout_weight="3"
                     android:textColor="#00897B"
                     android:layout_marginStart="16dp"
                     android:layout_marginBottom="2dp"
@@ -236,7 +217,7 @@
                     android:id="@+id/license_spdx_id_text_view"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.1"
+                    android:layout_weight="1"
                     android:textColor="#004D40"
                     android:layout_marginStart="16dp"
                     android:layout_marginBottom="2dp"
@@ -247,7 +228,7 @@
                     android:id="@+id/license_spdx_id_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.8"
+                    android:layout_weight="3"
                     android:textColor="#00897B"
                     android:layout_marginStart="15dp"
                     android:layout_marginBottom="2dp"
@@ -277,7 +258,7 @@
                     android:id="@+id/license_url_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.8"
+                    android:layout_weight="3"
                     android:textColor="#00897B"
                     android:layout_marginStart="16dp"
                     android:layout_marginBottom="2dp"
@@ -290,6 +271,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginBottom="12dp"
                 android:layout_marginStart="8dp" >
                 <TextView
                     android:id="@+id/license_node_id_text_view"
@@ -306,7 +288,7 @@
                     android:id="@+id/license_node_id_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.8"
+                    android:layout_weight="3"
                     android:textColor="#00897B"
                     android:layout_marginStart="16dp"
                     android:layout_marginBottom="2dp"
@@ -318,14 +300,22 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginEnd="2dp"
             android:layout_marginBottom="2dp"
-            android:layout_marginTop="2dp"
-            android:background="#E0F2F1"
+            android:background="#E1F5FE"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/permissions_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#00796B"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                android:textStyle="bold"
+                android:text="Permissions :" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -334,8 +324,9 @@
                 android:layout_marginStart="8dp" >
                 <TextView
                     android:id="@+id/permissions_admin_text_view"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:textColor="#004D40"
                     android:layout_marginStart="16dp"
                     android:layout_marginBottom="2dp"
@@ -344,8 +335,9 @@
 
                 <TextView
                     android:id="@+id/permissions_admin_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="3"
                     android:layout_marginStart="16dp"
                     android:textColor="#00897B"
                     android:layout_marginBottom="2dp"
@@ -361,8 +353,9 @@
                 android:layout_marginStart="8dp" >
                 <TextView
                     android:id="@+id/permissions_push_text_view"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:textColor="#004D40"
                     android:layout_marginStart="16dp"
                     android:layout_marginBottom="2dp"
@@ -371,8 +364,9 @@
 
                 <TextView
                     android:id="@+id/permissions_push_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="3"
                     android:layout_marginStart="16dp"
                     android:textColor="#00897B"
                     android:layout_marginBottom="2dp"
@@ -385,11 +379,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginBottom="24dp"
                 android:layout_marginStart="8dp" >
                 <TextView
                     android:id="@+id/permissions_pull_text_view"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:textColor="#004D40"
                     android:layout_marginStart="16dp"
                     android:layout_marginBottom="2dp"
@@ -398,8 +394,9 @@
 
                 <TextView
                     android:id="@+id/permissions_pull_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="3"
                     android:layout_marginStart="16dp"
                     android:textColor="#00897B"
                     android:layout_marginBottom="2dp"
